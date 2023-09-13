@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Freepik Downloader(FpDl) for Freepik is an online service that allows you to save unlimited stock vectors/photos (image) content on your PC or mobile phone." />
+    <link rel="canonical" href="https://fpdl.in/"/>
+    <title>Freepik Downloader</title>
+    <link rel="icon" href="assets/img/freepik-logo-black.svg" sizes="any" type="image/svg+xml">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--    <link href="assets/css/custom.css" rel="stylesheet">-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9874627255235697" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3LXEZX1WPN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3LXEZX1WPN');
+    </script>
+    <style>
+    @media (min-width: 768px) {
+        .px-md-20-p {
+            padding-right: 20%!important;
+            padding-left: 20%!important;
+        }
+    }
+
+    .downloader-container {
+        min-height: 88vh;
+    }
+
+    .form-download {
+        padding: 3rem 0;
+        max-width: 660px;
+    }
+
+    .form-download .message {
+        font-weight: 400;
+    }
+
+    .form-download .form-floating:focus-within {
+        z-index: 2;
+    }
+
+    .form-download .btn:focus,
+    .form-download input[type="url"],
+    .form-download .form-select:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .main-content {
+        line-height: 2;
+    }
+
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    .btn-primary {
+        background-color: #262624;;
+        border-color: #262624;;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:focus,
+    .btn-primary:active:hover {
+        border-color: #000000;
+        background-color: #000000;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .form-select:focus,
+    .form-control:focus {
+        border-color: #262624;;
+    }
+
+    @media (min-width: 768px) {
+        .form-download input[type="text"] {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .form-download .col-md-9 {
+            padding-right: 0;
+        }
+
+        .form-download .col-md-3 {
+            padding-left: 0;
+        }
+
+        .form-download .btn-primary {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .modal-dialog {
+            max-width: 660px;
+        }
+
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .form-download {
+            padding: 4rem 0;
+            max-width: 90%;
+        }
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: #fff;
+        background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+        box-shadow: unset;
+    }
+</style>
+</head>
+<body class="text-center">
+<main>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Second navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://fpdl.in">Freepik Downloader</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fpdl.in/#how">What is FPDL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fpdl.in/#how">How to download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fpdl.in/privacy-policy/" target="_blank">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://freepik.com/" target="_blank">Freepik</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>    <div class="form-download container">
+        <form id="download-form" method="post" action="downloader.php" target="_blank">
+            <!--            <a href="https://fpdl.in" target="_blank">-->
+            <!--                <img class="mb-3" src="assets/img/freepik-logo-black.svg" alt="freepik downloader logo" width="100" height="100">-->
+            <!--            </a>-->
+
+            
+            <h1 class="h4 mb-3 fw-bold">
+                <a href="https://fpdl.in" target="_blank" class="text-black text-decoration-none">Freepik Downloader</a>
+            </h1>
+            <div class="row pt-4">
+                <div class="col-md-9">
+                    <div class="form-floating">
+                        <input type="url" name="link" class="form-control" id="floating-input" placeholder="Freepik Image Url" autocomplete="off">
+                        <label for="floating-input">Freepik Image Url</label>
+                        <input type="hidden" name="fpdl">
+                    </div>
+                </div>
+                <div class="col-md-3 pt-4 pt-md-0 pl-md-0">
+                    <button id="get-image" class="w-100 h-100 btn btn-lg btn-primary" type="submit" name="submit" onClick="setTimeout(clearform, 500);">
+                        Get Image
+                    </button>
+                </div>
+
+                <div class="mt-3 text-muted">
+                    <p>Download automatically start when paste link with <strong>( CTRL + V )</strong> keys</p>
+                </div>
+
+                <div class="mt-4 text-muted">
+                    <strong>Example:</strong>
+                    <p style="font-size: 14px">https://img.freepik.com/premium-photo/3d-colorful-abstract-wallpaper_692702-9798.jpg</p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="main-content bg-light text-center">
+        <div class="container py-5">
+            <div>
+                <!--                <h2 class="pb-3 h4">What is FPDL?</h2>-->
+                <!--                <p>Freepik Downloader (FPDL) is a powerful tool that allows users to access high-quality graphics for their projects. It is a great resource for designers, developers, and marketers who need to create stunning visuals for their projects. With Freepik Downloader, users can easily search for and download vector graphics, illustrations, photos, and other types of graphics.</p>-->
+                <!--                <h2 class="pt-5 pb-3 h4">All the Premium assets you need, at one place</h2>-->
+                <!--                <p>Use our Freepik Downloader (FPDL) Tools to download Premium Freepik Assets for Free, and Improve your Design by using Premium Assets.</p>-->
+                <h2 class="pt-3 h4">Frequently Asked Questions</h2>
+                <p>Many users around the world have already made FPDL.IN the main tool to download Premium Freepik Assets for Free.</p>
+            </div>
+
+            <div class="accordion pt-4" id="how">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is FPDL?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The Freepik Downloader (FPDL) for Freepik is an online service that allows you to save unlimited stock vectors/photos content on your PC or mobile phone. This tool is the simplest approach to downloading vectors/stock photos you like and can't live without on your device. In our site has no limits on the number of vectors/stock photos you can download.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How to Download Freepik Vector, Photo and others?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img src="assets/img/image-link.jpg" class="img-fluid" alt="copy image link">
+                            <p class="py-3">1- Right click on the freepik image and copy image address</p>
+                            <img src="assets/img/freepik-downloader.jpg" class="img-fluid" alt="dwnload from freepik">
+                            <p class="py-3">2- Paste freepik image url and click on "Get Image" button</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Do I have to pay to download Freepik Vector, Photo and others?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            No, you don’t have to pay for anything because our Tool is free. You can support us by turning off your ad blocks or making donations. It supports our further development.                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-dark py-3">
+    <div class="container">
+        <h2 class="h6 text-white">&copy; 2022 - <a class="text-white text-decoration-none" href="https://fpdl.in" target="_blank">Freepik Downloader ( FPDL )</a></h2>
+    </div>
+</footer>
+<script>
+    function clearform() {
+        document.getElementById('floating-input').value='';
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if ( (e.ctrlKey || e.metaKey) && e.keyCode === 86 ) {
+            let download = document.getElementById('get-image');
+            let input    = document.getElementById('floating-input');
+            input.focus();
+            document.execCommand('paste');
+            setTimeout( function(){
+                download.click();
+            }, 500 );
+        }
+    });
+</script>
+<script src="assets/js/bootstrap.bundle.min.js"></script></main>
+</body>
+</html>

@@ -1,0 +1,92 @@
+ul li {
+  list-style-type: none;
+}
+
+.form-download {
+  padding: 8rem 0;
+  max-width: 660px;
+}
+
+.form-download .message {
+  font-weight: 400;
+}
+
+.form-download .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-download .btn:focus,
+.form-download input[type="url"] {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.main-content {
+  line-height: 2;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.btn-primary {
+    background-color: #262624;;
+    border-color: #262624;;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:hover {
+    border-color: #000000;
+    background-color: #000000;
+}
+
+.form-control:focus {
+    border-color: #262624;;
+}
+
+@media (min-width: 768px) {
+  .form-download input[type="text"] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .form-download .col-md-9 {
+    padding-right: 0;
+  }
+
+  .form-download .col-md-3 {
+    padding-left: 0;
+  }
+
+  .form-download .btn-primary {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .modal-dialog {
+    max-width: 660px;
+  }
+
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-download {
+    padding: 4rem 0;
+    max-width: 90%;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+  box-shadow: unset;
+}
